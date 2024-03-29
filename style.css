@@ -4,7 +4,7 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
-    font-family:"Poppins","sans-serif";
+    font-family:'Poppins',sans-serif;
 
 }
 
@@ -25,7 +25,7 @@
     color: #29f700 !important;
 }
 
-#navbarSupportedContent
+#navbarSupportedContent a
 {
     color: #fff;
     border-bottom: 2px solid transparent;
@@ -51,13 +51,16 @@ section
     justify-content: center;
     align-items: center;
 }
+
 #home
 {
     background: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.4)),url(bg.jfif);
     background-size: cover;
     background-position: center;
+    flex-direction: column;  
 
 }
+
 #home h1
 {
     font-size: 100px;
@@ -70,8 +73,9 @@ section
                   0px 4px 0px #ccc,
                   0px 5px 0px #ccc,
                   0px 6px 0px #ccc,
-                  0px 7px 0px #ccc,
+                  0px 7px 0px #ccc;
 }
+
 #home p
 {
     font-size: 18px;
@@ -133,12 +137,14 @@ section
     justify-content: center;
     align-items: center;
     margin: 20px 60px ;
+    transition: .2s;
 }
 
 .card:hover
 {
-    box-shadow: inset 5px 5px ;
-    transition: 2s;
+    box-shadow: inset 5px 5px 10px rgba(0,0,0,.3),
+                inset -4px -4px 10px white;
+    transition: .2s;
 }
 
 #contact img{
@@ -174,7 +180,7 @@ footer
     height: 30px;
     width: 100%;
     background: rgba(0, 0, 0, .8);
-    margin: -30px;
+    margin-top: -30px;
     text-align: center;
     color: white;
     padding: 3px;
